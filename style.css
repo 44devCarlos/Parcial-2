@@ -11,18 +11,24 @@ body {
 header img:hover {
 	cursor: pointer;
 }
+footer {
+	background-color: #333333;
+	height: 120px;
+}
 .logo {
 	float: left;
-	margin-left: 7%;
-	margin-top: 4%;
+	position: absolute;
+	left: 7%;
+	top: 5%;
 }
 .logo::after {
 	clear: left;
 }
 .menu {
 	float: right;
-	margin-right: 5%;
-	margin-top: 4%;
+	position: absolute;
+	right: 5%;
+	top: 5%;
 }
 .menu::after {
 	clear: right;
@@ -52,8 +58,8 @@ header img:hover {
 	background-color: violet;
 	width: 600px;
 	height: 600px;
-	margin-top: 53%;
-	margin-left: 15%;
+	top: 7.6%;
+	right: 19%;
 }
 .circle-item2 {
 	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
@@ -61,15 +67,15 @@ header img:hover {
 	background-position: center;
 	width: 750px;
 	height: 750px;
-	margin-top: 20%;
-	margin-left: 23%;
+	top: 2%;
+	right: 9%;
 }
 .circle-item3 {
 	background-color: orange;
 	width: 720px;
 	height: 720px;
-	margin-top: 50%;
-	margin-right: 30%;
+	top: 6%;
+	right: 37%;
 }
 .circle3-text {
 	display: flex;
@@ -109,6 +115,7 @@ header img:hover {
 	letter-spacing: 0.2em;
 }
 .circle3-text button:hover {
+	cursor: pointer;
 	background-color: black;
 	color: orange;
 	transition: 0.2s;
@@ -122,27 +129,39 @@ header img:hover {
 }
 .section-container2 {
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
 	width: 100%;
 	height: 300px;
 	background-color: darkolivegreen;
-	flex-wrap: wrap;
 }
 .container2-item1,
 .container2-item2,
 .container2-item3,
 .container2-item4 {
-	position: relative;
+	position: absolute;
 	border-radius: 50%;
 	background-color: white;
 	padding: 6px;
 	width: 170px;
 	height: 170px;
-	margin-top: -14%;
-	margin-right: 4%;
-	margin-left: 6%;
+}
+.container2-item1 {
+	top: -37%;
+	left: 11%;
+}
+.container2-item2 {
+	top: -37%;
+	left: 33%;
+}
+.container2-item3 {
+	top: -37%;
+	right: 33%;
+}
+.container2-item4 {
+	top: -37%;
+	right: 11%;
 }
 .container2-item1 img,
 .container2-item2 img,
@@ -164,10 +183,11 @@ header img:hover {
 	text-align: center;
 }
 .section-container2 p {
+	position: absolute;
 	font-size: 20px;
 	text-align: center;
 	margin-top: 0;
-	margin-bottom: 20px;
+	bottom: 10%;
 }
 .section-container2 a {
 	color: black;
@@ -177,10 +197,11 @@ header img:hover {
 }
 .section-container3 {
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 1300px;
+	height: 1500px;
 	background-color: brown;
 }
 .container3-item1,
@@ -197,8 +218,8 @@ header img:hover {
 	background-position: center;
 	width: 500px;
 	height: 500px;
-	margin-right: 47%;
-	margin-bottom: 50%;
+	right: 55%;
+	top: 11%;
 }
 .container3-item2 {
 	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
@@ -206,8 +227,8 @@ header img:hover {
 	background-position: center;
 	width: 500px;
 	height: 500px;
-	margin-left: 47%;
-	margin-bottom: 50%;
+	left: 55%;
+	top: 13%;
 }
 .container3-item3 {
 	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
@@ -215,8 +236,8 @@ header img:hover {
 	background-position: center;
 	width: 500px;
 	height: 500px;
-	margin-right: 47%;
-	margin-top: 50%;
+	right: 57%;
+	bottom: 14%;
 }
 .container3-item4 {
 	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
@@ -224,13 +245,14 @@ header img:hover {
 	background-position: center;
 	width: 500px;
 	height: 500px;
-	margin-left: 47%;
-	margin-top: 50%;
+	left: 55%;
+	bottom: 14%;
 }
 .container3-item5 {
 	background-color: white;
 	width: 720px;
 	height: 720px;
+	top: 27%;
 }
 
 .container3-text {
@@ -277,12 +299,12 @@ header img:hover {
 	transition: 0.2s;
 }
 .section-container4 {
+	position: relative;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
-	width: 60%;
+	width: 100%;
 	height: 700px;
 }
 .container4-item1,
@@ -303,34 +325,37 @@ header img:hover {
 	box-sizing: border-box;
 }
 .container4-title {
-	margin-top: -5px;
+	position: absolute;
+	width: 800px;
+	top: 10px;
 	font-size: 45px;
 }
 .container4-item1 {
-	margin-top: -180px;
-	margin-right: 310px;
+	top: 30%;
+	left: 27.4%;
 }
 .container4-item2 {
-	margin-top: -180px;
-	margin-left: 310px;
+	top: 30%;
+	right: 27.4%;
 }
 .container4-item3 {
-	margin-top: 35px;
-	margin-right: 310px;
+	top: 46%;
+	left: 27.4%;
 }
 .container4-item4 {
-	margin-top: 35px;
-	margin-left: 310px;
+	top: 46%;
+	right: 27.4%;
 }
 .container4-item5 {
-	margin-top: 250px;
-	margin-right: 310px;
+	top: 62%;
+	left: 27.4%;
 }
 .container4-item6 {
-	margin-top: 250px;
-	margin-left: 310px;
+	top: 62%;
+	right: 27.4%;
 }
 .section-container4 button {
+	position: absolute;
 	background-color: transparent;
 	border-style: solid;
 	border-color: darkolivegreen;
@@ -342,7 +367,7 @@ header img:hover {
 	padding-left: 70px;
 	padding-right: 70px;
 	letter-spacing: 0.2em;
-	margin-top: 300px;
+	bottom: 50px;
 }
 .section-container4 button:hover {
 	cursor: pointer;
@@ -350,15 +375,182 @@ header img:hover {
 	color: white;
 	transition: 0.2s;
 }
+.section6-container {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 1600px;
+	background-color: rgb(0, 102, 255);
+	padding: auto;
+}
+.section6-border {
+	position: absolute;
+	top: 150px;
+	left: 700px;
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+	background-color: white;
+	padding: 0;
+	width: 550px;
+	height: 420px;
+	z-index: 2;
+}
+.container6-title {
+	position: absolute;
+	top: 0px;
+	left: 70px;
+	font-size: 45px;
+}
+.container6-text1 {
+	top: 124px;
+	font-size: 22px;
+	position: absolute;
+	left: 70px;
+	margin-right: 30px;
+}
+.container6-text2 {
+	top: 204px;
+	font-size: 22px;
+	position: absolute;
+	left: 70px;
+}
+.section6-image {
+	position: absolute;
+	left: 170px;
+	top: 350px;
+	z-index: 1;
+	border-radius: 50%;
+}
+.section6-item1 {
+	position: absolute;
+	top: 780px;
+	left: 90px;
+	z-index: 2;
+}
+.section6-item2 {
+	position: absolute;
+	top: 780px;
+	left: 353px;
+	z-index: 2;
+}
+.section6-item3 {
+	position: absolute;
+	top: 780px;
+	left: 616px;
+	z-index: 2;
+}
+.section6-item4 {
+	position: absolute;
+	top: 780px;
+	left: 879px;
+	z-index: 2;
+}
+.container6box-title {
+	font-size: 45px;
+	margin: 0;
+	position: absolute;
+	top: 90px;
+	left: 70px;
+}
+.container6box-title2 {
+	font-size: 45px;
+	margin: 0;
+	position: absolute;
+	top: 90px;
+	left: 80px;
+}
+.container6box-title3 {
+	font-size: 45px;
+	margin: 0;
+	position: absolute;
+	top: 90px;
+	left: 80px;
+}
+.container6box-title4 {
+	font-size: 45px;
+	margin: 0;
+	position: absolute;
+	top: 90px;
+	left: 100px;
+}
+.container6box-subtitle {
+	position: absolute;
+	top: 145px;
+	left: 90px;
+}
+.container6box-subtitle2 {
+	position: absolute;
+	top: 145px;
+	left: 75px;
+}
+.container6box-subtitle3 {
+	text-align: center;
+	margin-right: 65px;
+	position: absolute;
+	top: 145px;
+	left: 65px;
+}
+.container6box-subtitle4 {
+	position: absolute;
+	top: 145px;
+	left: 95px;
+}
+
+.section6-boxes {
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+	background-color: white;
+	font-weight: bold;
+	padding: 0;
+	width: 225px;
+	height: 250px;
+	z-index: 2;
+	margin: 15px;
+}
+.section6-container button {
+	position: absolute;
+	bottom: 75px;
+	left: 70px;
+	background-color: transparent;
+	border-style: solid;
+	border-color: rgb(0, 102, 255);
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 6em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 70px;
+	padding-right: 70px;
+	letter-spacing: 0.2em;
+}
+.section6-container button:hover {
+	cursor: pointer;
+	background-color: rgb(0, 102, 255);
+	color: white;
+	transition: 0.2s;
+}
+.footfont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Open Sans", sans-serif;
+	color: white;
+	margin-top: 55px;
+}
+.footfont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Open Sans", sans-serif;
+	color: white;
+	margin-top: 55px;
+}
 @media (max-width: 619px) {
 	section {
 		overflow: hidden;
 	}
-	.menu {
-		margin-right: 5%;
-	}
 	.section-container {
-		height: 700px;
+		height: 800px;
 	}
 	.circle-item1 {
 		display: none;
@@ -366,14 +558,13 @@ header img:hover {
 	.circle-item2 {
 		width: 500px;
 		height: 500px;
-		margin-top: -20%;
-		margin-left: 0;
+		top: 2%;
 	}
 	.circle-item3 {
 		width: 700px;
 		height: 700px;
-		margin-top: 120%;
-		margin-right: 0%;
+		top: 7%;
+		right: -5%;
 	}
 	.circle3-text {
 		overflow: visible;
@@ -389,8 +580,21 @@ header img:hover {
 	.container2-item3,
 	.container2-item4 {
 		overflow: visible;
-		margin-top: -20%;
-		margin-bottom: 35%;
+	}
+	.container2-item1 {
+		top: -21%;
+	}
+	.container2-item2 {
+		top: -21%;
+		left: 55%;
+	}
+	.container2-item3 {
+		top: 21%;
+		left: 11%;
+	}
+	.container2-item4 {
+		top: 21%;
+		left: 55%;
 	}
 	.section-container3 {
 		height: 2000px;
@@ -403,30 +607,25 @@ header img:hover {
 		height: 350px;
 	}
 	.container3-item1 {
-		margin: 0;
-		margin-top: -230%;
-		margin-left: 25%;
+		top: 2%;
+		right: 5%;
 	}
 	.container3-item2 {
-		margin: 0;
-		margin-top: -100%;
-		margin-right: 25%;
+		top: 21%;
+		left: 5%;
 	}
 	.container3-item3 {
-		margin: 0;
-		margin-top: 125%;
-		margin-right: 25%;
+		bottom: 27%;
+		left: 5%;
 	}
 	.container3-item4 {
-		margin: 0;
-		margin-top: 250%;
-		margin-left: 25%;
+		bottom: 3%;
+		left: 37%;
 	}
 	.container3-item5 {
 		width: 600px;
 		height: 600px;
-		margin: 0;
-		margin-top: 10%;
+		top: 32%;
 	}
 	.container3-text {
 		width: 400px;
@@ -448,17 +647,79 @@ header img:hover {
 	.container4-item5,
 	.container4-item6 {
 		position: static;
-		margin: 0;
-		padding: 0;
 		width: 99%;
 		font-size: 30px;
 	}
 	.container4-title {
 		width: 100%;
+		top: 0.1%;
 	}
 	.section-container4 button {
-		margin: 0;
-		margin-top: 30px;
+		bottom: 11%;
+	}
+	.section6-container {
+		height: 1300px;
+	}
+	.section6-border {
+		top: 5%;
+		left: 25%;
+		width: 430px;
+		height: 450px;
+	}
+	.section6-image {
+		width: 500px;
+		height: 500px;
+		left: 4%;
+	}
+	.section6-boxes {
+		width: 260px;
+		height: 180px;
+	}
+	.section6-item1 {
+		left: 3%;
+	}
+	.section6-item2 {
+		left: 50%;
+	}
+	.section6-item3 {
+		left: 3%;
+		top: 77%;
+	}
+	.section6-item4 {
+		left: 50%;
+		top: 77%;
+	}
+	.container6box-title {
+		top: 25%;
+		left: 27%;
+	}
+	.container6box-subtitle {
+		top: 60%;
+		left: 35%;
+	}
+	.container6box-title2 {
+		top: 25%;
+		left: 34%;
+	}
+	.container6box-subtitle2 {
+		top: 60%;
+		left: 34%;
+	}
+	.container6box-title3 {
+		top: 25%;
+		left: 33%;
+	}
+	.container6box-subtitle3 {
+		top: 60%;
+		left: 23%;
+	}
+	.container6box-title4 {
+		top: 25%;
+		left: 40%;
+	}
+	.container6box-subtitle4 {
+		top: 60%;
+		left: 37%;
 	}
 }
 
