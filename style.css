@@ -197,10 +197,11 @@ footer {
 }
 .section-container3 {
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 1300px;
+	height: 1500px;
 	background-color: brown;
 }
 .container3-item1,
@@ -218,7 +219,7 @@ footer {
 	width: 500px;
 	height: 500px;
 	right: 55%;
-	top: 34%;
+	top: 11%;
 }
 .container3-item2 {
 	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
@@ -227,7 +228,7 @@ footer {
 	width: 500px;
 	height: 500px;
 	left: 55%;
-	top: 34%;
+	top: 13%;
 }
 .container3-item3 {
 	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
@@ -235,8 +236,8 @@ footer {
 	background-position: center;
 	width: 500px;
 	height: 500px;
-	right: 55%;
-	bottom: 44.5%;
+	right: 57%;
+	bottom: 14%;
 }
 .container3-item4 {
 	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
@@ -245,12 +246,13 @@ footer {
 	width: 500px;
 	height: 500px;
 	left: 55%;
-	bottom: 44.5%;
+	bottom: 14%;
 }
 .container3-item5 {
 	background-color: white;
 	width: 720px;
 	height: 720px;
+	top: 27%;
 }
 
 .container3-text {
@@ -545,11 +547,8 @@ footer {
 	section {
 		overflow: hidden;
 	}
-	.menu {
-		margin-right: 5%;
-	}
 	.section-container {
-		height: 700px;
+		height: 800px;
 	}
 	.circle-item1 {
 		display: none;
@@ -557,14 +556,13 @@ footer {
 	.circle-item2 {
 		width: 500px;
 		height: 500px;
-		margin-top: -20%;
-		margin-left: 0;
+		top: 2%;
 	}
 	.circle-item3 {
 		width: 700px;
 		height: 700px;
-		margin-top: 120%;
-		margin-right: 0%;
+		top: 7%;
+		right: -5%;
 	}
 	.circle3-text {
 		overflow: visible;
@@ -580,8 +578,21 @@ footer {
 	.container2-item3,
 	.container2-item4 {
 		overflow: visible;
-		margin-top: -20%;
-		margin-bottom: 35%;
+	}
+	.container2-item1 {
+		top: -21%;
+	}
+	.container2-item2 {
+		top: -21%;
+		left: 55%;
+	}
+	.container2-item3 {
+		top: 21%;
+		left: 11%;
+	}
+	.container2-item4 {
+		top: 21%;
+		left: 55%;
 	}
 	.section-container3 {
 		height: 2000px;
@@ -594,30 +605,25 @@ footer {
 		height: 350px;
 	}
 	.container3-item1 {
-		margin: 0;
-		margin-top: -230%;
-		margin-left: 25%;
+		top: 2%;
+		right: 5%;
 	}
 	.container3-item2 {
-		margin: 0;
-		margin-top: -100%;
-		margin-right: 25%;
+		top: 21%;
+		left: 5%;
 	}
 	.container3-item3 {
-		margin: 0;
-		margin-top: 125%;
-		margin-right: 25%;
+		bottom: 27%;
+		left: 5%;
 	}
 	.container3-item4 {
-		margin: 0;
-		margin-top: 250%;
-		margin-left: 25%;
+		bottom: 3%;
+		left: 37%;
 	}
 	.container3-item5 {
 		width: 600px;
 		height: 600px;
-		margin: 0;
-		margin-top: 10%;
+		top: 32%;
 	}
 	.container3-text {
 		width: 400px;
@@ -639,16 +645,46 @@ footer {
 	.container4-item5,
 	.container4-item6 {
 		position: static;
-		margin: 0;
-		padding: 0;
 		width: 99%;
 		font-size: 30px;
 	}
 	.container4-title {
 		width: 100%;
+		top: 0.1%;
 	}
 	.section-container4 button {
-		margin: 0;
-		margin-top: 30px;
+		bottom: 11%;
+	}
+	.section6-container {
+		height: 1300px;
+	}
+	.section6-border {
+		top: 5%;
+		left: 25%;
+		width: 430px;
+		height: 450px;
+	}
+	.section6-image {
+		width: 500px;
+		height: 500px;
+		left: 4%;
+	}
+	.section6-boxes {
+		width: 260px;
+		height: 180px;
+	}
+	.section6-item1 {
+		left: 3%;
+	}
+	.section6-item2 {
+		left: 50%;
+	}
+	.section6-item3 {
+		left: 3%;
+		top: 77%;
+	}
+	.section6-item4 {
+		left: 50%;
+		top: 77%;
 	}
 }
