@@ -13,7 +13,7 @@ header img:hover {
 }
 footer {
 	background-color: #333333;
-	height: 240px;
+	height: 120px;
 }
 .logo {
 	float: left;
@@ -741,8 +741,7 @@ footer {
 	color: white;
 	margin-top: 55px;
 }
-.footfont,
-footer section p {
+.footfont {
 	display: flex;
 	justify-content: center;
 	align-items: center;
