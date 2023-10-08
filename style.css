@@ -11,6 +11,10 @@ body {
 header img:hover {
 	cursor: pointer;
 }
+footer {
+	background-color: #333333;
+	height: 120px;
+}
 .logo {
 	float: left;
 	margin-left: 7%;
@@ -349,6 +353,14 @@ header img:hover {
 	background-color: darkolivegreen;
 	color: white;
 	transition: 0.2s;
+}
+.footfont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-family: "Open Sans", sans-serif;
+    color:white;
+	margin-top: 55px;
 }
 @media (max-width: 619px) {
 	section {
