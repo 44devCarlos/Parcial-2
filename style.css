@@ -537,25 +537,25 @@ footer {
 	background-color: white;
 	padding: auto;
 }
-.section7-item1 {
+.section7-item1{
 	position: absolute;
 	top: -150px;
 	left: 90px;
 	z-index: 2;
 }
-.section7-item2 {
+.section7-item2{
 	position: absolute;
 	top: -150px;
 	left: 353px;
 	z-index: 2;
 }
-.section7-item3 {
+.section7-item3{
 	position: absolute;
 	top: -150px;
 	left: 616px;
 	z-index: 2;
 }
-.section7-item4 {
+.section7-item4{
 	position: absolute;
 	top: -150px;
 	left: 879px;
@@ -771,97 +771,6 @@ footer {
 	.section-container4 button {
 		bottom: 11%;
 	}
-
-	.container5-item1,
-	.container5-item2,
-	.container5-item3,
-	.container5-item4 {
-		position: absolute;
-	}
-
-	.section-container5 {
-		display: flex;
-		width: 100%;
-		height: 1300px;
-		background-color: white;
-		position: relative;
-	}
-	.container5-item1 {
-		width: 580px;
-		height: 580px;
-		border-radius: 50%;
-		background-color: gray;
-		left: 300px;
-		top: 65px;
-	}
-	.container5-item2 {
-		width: 500px;
-		height: 580px;
-		border-radius: 20px;
-		background-color: white;
-		position: absolute;
-		left: 150px;
-		top: 400px;
-		padding: 20px;
-		box-sizing: border-box;
-		z-index: 3;
-	}
-	.container5-item3 {
-		background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
-		background-size: cover;
-		background-position: center;
-		width: 550px;
-		height: 550px;
-		border-radius: 50%;
-		top: 290px;
-		left: 750px;
-	}
-	.container5-item4 {
-		background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
-		background-size: cover;
-		background-position: center;
-		width: 450px;
-		height: 450px;
-		border-radius: 50%;
-		top: 720px;
-		left: 550px;
-		z-index: 0;
-	}
-	.container5-text {
-		text-align: left;
-	}
-
-	.container5-text h1 {
-		font-size: 65px;
-		margin: 0;
-	}
-	.container5-text p {
-		font-size: 20px;
-		line-height: 1.8em;
-	}
-	.container5-text a {
-		color: black;
-	}
-	.container5-text a:hover {
-		opacity: 0.9;
-	}
-	.container5-text button {
-		background-color: transparent;
-		border-style: solid;
-		border-color: brown;
-		text-transform: uppercase;
-		font-weight: bold;
-		border-radius: 6em;
-		padding: 20px 65px;
-		letter-spacing: 0.2em;
-	}
-	.container5-text button:hover {
-		cursor: pointer;
-		background-color: brown;
-		color: white;
-		transition: 0.2s;
-	}
-
 	.section6-container {
 		height: 1300px;
 	}
@@ -926,4 +835,100 @@ footer {
 		top: 60%;
 		left: 37%;
 	}
+}
+
+.container5-item1,
+.container5-item2,
+.container5-item3,
+.container5-item4 {
+	position: absolute;
+}
+
+.section-container5{
+	display: flex;
+	width: 100%;
+	height: 1400px;
+	background-color: white;
+	position: relative;
+}
+.container5-item1{
+	width: 580px;
+	height: 580px;
+	border-radius: 50%;
+	background-color: gray;
+	left: 370px;
+	top: 65px;
+
+	}
+.container5-item2{ /* texto cuadrado */
+	width: 500px;
+    height: 580px;
+    border-radius: 35px;
+    background-color: white;
+    position: absolute;
+    left: 240px;
+    top: 400px;
+    padding: 20px; /* Agregamos relleno para que el contenido quepa */
+    box-sizing: border-box;
+	z-index: 3;
+
+}
+.container5-item3{
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 550px;
+	height: 550px;
+	border-radius: 50%;
+	top: 290px;
+	left: 820px;
+
+
+}
+.container5-item4{
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 450px;
+	height: 450px;
+	border-radius: 50%;
+	top: 750px;
+	left: 620px;
+	z-index: 0;
+
+}
+.container5-text{
+	text-align: left;
+}
+
+.container5-text h1 {
+	font-size: 65px;
+	margin: 0;
+	
+}
+.container5-text p {
+	font-size: 20px;
+	line-height: 1.8em;
+}
+.container5-text a {
+	color: black;
+}
+.container5-text a:hover {
+	opacity: 0.9;
+}
+.container5-text button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: brown;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 6em;
+    padding: 20px 65px; /* Redefinimos el padding de una manera más concisa */
+    letter-spacing: 0.2em;
+}
+.container5-text button:hover {
+	cursor: pointer;
+	background-color: brown;
+	color: white;
+	transition: 0.2s;
 }
