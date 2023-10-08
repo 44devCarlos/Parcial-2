@@ -304,7 +304,7 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
-	width: 60%;
+	width: 100%;
 	height: 700px;
 }
 .container4-item1,
@@ -326,32 +326,33 @@ footer {
 }
 .container4-title {
 	position: absolute;
-	top: 20px;
+	width: 800px;
+	top: 10px;
 	font-size: 45px;
 }
 .container4-item1 {
-	top: 220px;
-	right: 410px;
+	top: 30%;
+	left: 27.4%;
 }
 .container4-item2 {
-	top: 220px;
-	left: 410px;
+	top: 30%;
+	right: 27.4%;
 }
 .container4-item3 {
-	top: 330px;
-	right: 410px;
+	top: 46%;
+	left: 27.4%;
 }
 .container4-item4 {
-	top: 330px;
-	left: 410px;
+	top: 46%;
+	right: 27.4%;
 }
 .container4-item5 {
-	top: 440px;
-	right: 410px;
+	top: 62%;
+	left: 27.4%;
 }
 .container4-item6 {
-	top: 440px;
-	left: 410px;
+	top: 62%;
+	right: 27.4%;
 }
 .section-container4 button {
 	position: absolute;
@@ -499,6 +500,7 @@ footer {
 	border: 2px solid #ffffff;
 	border-radius: 15px;
 	background-color: white;
+	font-weight: bold;
 	padding: 0;
 	width: 225px;
 	height: 250px;
@@ -686,5 +688,37 @@ footer {
 	.section6-item4 {
 		left: 50%;
 		top: 77%;
+	}
+	.container6box-title {
+		top: 25%;
+		left: 27%;
+	}
+	.container6box-subtitle {
+		top: 60%;
+		left: 35%;
+	}
+	.container6box-title2 {
+		top: 25%;
+		left: 34%;
+	}
+	.container6box-subtitle2 {
+		top: 60%;
+		left: 34%;
+	}
+	.container6box-title3 {
+		top: 25%;
+		left: 33%;
+	}
+	.container6box-subtitle3 {
+		top: 60%;
+		left: 23%;
+	}
+	.container6box-title4 {
+		top: 25%;
+		left: 40%;
+	}
+	.container6box-subtitle4 {
+		top: 60%;
+		left: 37%;
 	}
 }
