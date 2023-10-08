@@ -354,6 +354,168 @@ footer {
 	color: white;
 	transition: 0.2s;
 }
+.section6-container{
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 1600px;
+	background-color: rgb(0, 102, 255);
+	padding: auto;
+}
+.section6-border{
+	position: absolute;
+	top: 130px;
+	left: 960px;
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+  	background-color: white;
+	padding: 0;
+	width: 550px;
+  	height: 420px;
+	z-index: 2;
+}
+.container6-title {
+	position: absolute;
+	top: 0px;
+	left: 70px;
+	font-size: 45px;
+}
+.container6-text1 {
+	top: 124px;
+	font-size: 22px;
+	position: absolute;
+	left: 70px;
+	margin-right: 30px;
+}
+.container6-text2 {
+	top: 204px;
+	font-size: 22px;
+	position: absolute;
+	left: 70px;
+	
+}
+.section6-image{
+	position: absolute;
+	left: 450px;
+	top: 330px;
+	z-index: 1;
+	border-radius: 50%;
+}
+.section6-item1{
+	position: absolute;
+	top: 780px;
+	left: 370px;
+	z-index: 2;
+}
+.section6-item2{
+	position: absolute;
+	top: 780px;
+  	left: 630px;
+	z-index: 2;
+}
+.section6-item3{
+	position: absolute;
+  	top: 780px;
+  	left: 890px;
+	z-index: 2;
+}
+.section6-item4{
+	position: absolute;
+  	top: 780px;
+  	left: 1150px;
+	z-index: 2;
+}
+.container6box-title {
+	font-size: 45px;
+	margin: 0;
+	position: absolute;
+	top:90px;
+	left: 70px;
+}
+.container6box-title2 {
+	font-size: 45px;
+	margin: 0;
+	position: absolute;
+	top:90px;
+	left: 80px;
+}
+.container6box-title3 {
+	font-size: 45px;
+	margin: 0;
+	position: absolute;
+	top:90px;
+	left: 80px;
+}
+.container6box-title4 {
+	font-size: 45px;
+	margin: 0;
+	position: absolute;
+	top:90px;
+	left: 100px;
+}
+.container6box-subtitle {
+	position: absolute;
+	top: 145px;
+	left: 90px;
+}
+.container6box-subtitle2 {
+	position: absolute;
+	top: 145px;
+	left: 75px;
+}
+.container6box-subtitle3 {
+	text-align: center;
+	margin-right: 65px;
+	position: absolute;
+	top: 145px;
+	left: 65px;
+}
+.container6box-subtitle4 {
+	position: absolute;
+	top: 145px;
+	left: 95px;
+}
+
+.section6-boxes{
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+  	background-color: white;
+	padding: 0;
+	width: 225px;
+  	height: 250px;
+	z-index: 2;
+	margin: 15px;
+}
+.section6-container button {
+	position: absolute;
+	bottom: 75px;
+	left: 70px;
+	background-color: transparent;
+	border-style: solid;
+	border-color: rgb(0, 102, 255);
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 6em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 70px;
+	padding-right: 70px;
+	letter-spacing: 0.2em;
+}
+.section6-container button:hover {
+	cursor: pointer;
+	background-color: rgb(0, 102, 255);
+	color: white;
+	transition: 0.2s;
+}
+.footfont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-family: "Open Sans", sans-serif;
+    color:white;
+	margin-top: 55px;
+}
 .footfont {
 	display: flex;
 	justify-content: center;
