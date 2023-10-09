@@ -3,20 +3,18 @@
 	font-family: "Dancing Script", cursive;
 }
 body {
-	background-color: black;
+	background-color: black; /*Utilizamos fondo negro para la página*/
 	margin: 0;
 	padding: 0;
-	display: flex;
+	display: flex; /*Lo "Flexeamos" en columna*/
 	flex-direction: column;
 }
-header img:hover {
-	cursor: pointer;
-}
 footer {
-	background-color: #333333;
+	background-color: #333333; /*Para el footer utilizamos un gris oscuro*/
 	height: 120px;
 }
 .logo {
+	/*Posicionamos nuestro logo*/
 	float: left;
 	position: absolute;
 	width: 10%;
@@ -24,25 +22,32 @@ footer {
 	top: 1%;
 }
 .logo::after {
+	/*Aqui limpiamos el float:left;*/
 	clear: left;
 }
 .menu {
-	filter: invert(100%);
+	/*Posicionamos nuestra imagen de menu*/
+	filter: invert(
+		100%
+	); /*Como la imagen es blanco con negro, le invertimos los colores para que caiga con el fondo*/
 	float: right;
 	position: absolute;
 	right: 5%;
 	top: 5%;
 }
 .menu::after {
+	/*Aqui limpiamos el float:right;*/
 	clear: right;
 }
 .main-container {
+	/*Aqui "flexeamos" nuestro contenedor principal, lo alineamos y posicion relativa*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
 }
 .section-container {
+	/*El 1° contenedor, alineamos todo al centro y su altura*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -51,11 +56,13 @@ footer {
 .circle-item1,
 .circle-item2,
 .circle-item3 {
+	/*Posicion absoluta para poder mover los 3 circulos en diferentes posiciones*/
 	position: absolute;
 	border-radius: 50%;
-	box-shadow: 0 0 10px 1px gray;
+	box-shadow: 0 0 10px 1px gray; /*Le añadimos una pequeña sombra en gris*/
 }
 .circle-item1 {
+	/*Posicionamos nuestro 1° circulo tiene fondo blanco*/
 	background-color: white;
 	width: 600px;
 	height: 600px;
@@ -63,15 +70,17 @@ footer {
 	right: 19%;
 }
 .circle-item2 {
+	/*Posicionamos nuestro 2° circulo tiene una imagen de fondo*/
 	background-image: url("img/COD1.jpg");
-	background-size: cover;
-	background-position: center;
+	background-size: cover; /*Para que la imagen cubra todo el circulo*/
+	background-position: center; /*Para que este en el centro*/
 	width: 750px;
 	height: 750px;
 	top: 2%;
 	right: 9%;
 }
 .circle-item3 {
+	/*Posicionamos nuestro 3° circulo que es de texto y que tiene fondo naranja*/
 	background-color: darkorange;
 	width: 720px;
 	height: 720px;
@@ -79,6 +88,7 @@ footer {
 	right: 37%;
 }
 .circle3-text {
+	/*Posicionamos nuestro contenedor de texto*/
 	display: flex;
 	width: 450px;
 	height: 450px;
@@ -89,21 +99,26 @@ footer {
 	margin-top: 150px;
 }
 .circle3-text h1 {
+	/*El H1 del circulo de texto*/
 	font-size: 50px;
 	margin: 0;
 	padding: 0;
 }
 .circle3-text p {
+	/*El p del circulo de texto*/
 	font-size: 25px;
 	line-height: 1.5em;
 }
 .circle3-text a {
+	/*El a del circulo de texto*/
 	color: black;
 }
 .circle3-text a:hover {
+	/*Cuando pasa por encima del link se opaca*/
 	opacity: 0.7;
 }
 .circle3-text button {
+	/*El boton del circulo de texto*/
 	background-color: transparent;
 	border-style: solid;
 	font-weight: bold;
@@ -115,12 +130,14 @@ footer {
 	padding-right: 50px;
 	letter-spacing: 0.2em;
 }
+/*Estilo del boton cuando pasas por encima*/
 .circle3-text button:hover {
 	cursor: pointer;
 	background-color: black;
 	color: darkorange;
 	transition: 0.2s;
 }
+/*Estilo del banner que cubre todo el ancho de la pantalla*/
 .background-section2 {
 	width: 100%;
 	height: 320px;
@@ -128,6 +145,7 @@ footer {
 	display: block;
 	object-fit: cover;
 }
+/*Estilo del contenedor 2*/
 .section-container2 {
 	display: flex;
 	position: relative;
@@ -137,6 +155,7 @@ footer {
 	height: 300px;
 	background-color: darkorange;
 }
+/*Estilos para los item dentro del contenedor 2*/
 .container2-item1,
 .container2-item2,
 .container2-item3,
@@ -150,21 +169,26 @@ footer {
 	box-shadow: 0 0 10px 1px gray;
 }
 .container2-item1 {
+	/*Posicionamiento*/
 	top: -37%;
 	left: 11%;
 }
 .container2-item2 {
+	/*Posicionamiento*/
 	top: -37%;
 	left: 33%;
 }
 .container2-item3 {
+	/*Posicionamiento*/
 	top: -37%;
 	right: 33%;
 }
 .container2-item4 {
+	/*Posicionamiento*/
 	top: -37%;
 	right: 11%;
 }
+/*Estilo para las imagenes dentro del contenedor2*/
 .container2-item1 img,
 .container2-item2 img,
 .container2-item3 img,
@@ -177,6 +201,7 @@ footer {
 	justify-content: center;
 	margin: 5px;
 }
+/*Estilo para los H2 dentro del contenedor2*/
 .container2-item1 h2,
 .container2-item2 h2,
 .container2-item3 h2,
@@ -184,6 +209,7 @@ footer {
 	margin-top: 20px;
 	text-align: center;
 }
+/*Estilo para los p dentro del contenedor2*/
 .section-container2 p {
 	position: absolute;
 	font-size: 20px;
@@ -191,12 +217,15 @@ footer {
 	margin-top: 0;
 	bottom: 10%;
 }
+/*Estilo para los a dentro del contenedor2*/
 .section-container2 a {
 	color: black;
 }
+/*Estilo para los a dentro del contenedor2 cuando pasas por encima*/
 .section-container2 a:hover {
 	opacity: 0.9;
 }
+/*Estilo del contenedor 3*/
 .section-container3 {
 	display: flex;
 	position: relative;
@@ -205,6 +234,7 @@ footer {
 	width: 100%;
 	height: 1500px;
 }
+/*Estilo para los contenedores dentro del container3*/
 .container3-item1,
 .container3-item2,
 .container3-item3,
@@ -214,6 +244,7 @@ footer {
 	border-radius: 50%;
 	box-shadow: 0 0 10px 1px gray;
 }
+/*Estilo para el contenedor3*/
 .container3-item1 {
 	background-image: url("img/COD3.jpg");
 	background-size: cover;
@@ -223,6 +254,7 @@ footer {
 	right: 55%;
 	top: 11%;
 }
+/*Estilo para el contenedor3*/
 .container3-item2 {
 	background-image: url("img/COD4.jpg");
 	background-size: cover;
@@ -232,6 +264,7 @@ footer {
 	left: 55%;
 	top: 13%;
 }
+/*Estilo para el contenedor3*/
 .container3-item3 {
 	background-image: url("img/COD5.jpg");
 	background-size: cover;
@@ -241,6 +274,7 @@ footer {
 	right: 57%;
 	bottom: 14%;
 }
+/*Estilo para el contenedor3*/
 .container3-item4 {
 	background-image: url("https://c4.wallpaperflare.com/wallpaper/403/855/787/sword-blood-fantasy-armor-wallpaper-preview.jpg");
 	background-size: cover;
@@ -250,13 +284,14 @@ footer {
 	left: 55%;
 	bottom: 14%;
 }
+/*Estilo para el contenedor3*/
 .container3-item5 {
 	background-color: darkorange;
 	width: 720px;
 	height: 720px;
 	top: 27%;
 }
-
+/*Estilo para el contenedor de texto*/
 .container3-text {
 	display: flex;
 	width: 600px;
@@ -267,20 +302,25 @@ footer {
 	margin-left: 63px;
 	margin-top: 160px;
 }
+/*Estilo para el H1 del contenedor3*/
 .container3-text h1 {
 	font-size: 50px;
 	margin: 0;
 }
+/*Estilo para el p del contenedor3*/
 .container3-text p {
 	font-size: 25px;
 	line-height: 1.8em;
 }
+/*Estilo para el a del contenedor3*/
 .container3-text a {
 	color: black;
 }
+/*Estilo para el a del contenedor3 cuando pasas por encima*/
 .container3-text a:hover {
 	opacity: 0.9;
 }
+/*Estilo para el boton del contenedor3*/
 .container3-text button {
 	background-color: transparent;
 	border-style: solid;
@@ -294,12 +334,14 @@ footer {
 	padding-right: 70px;
 	letter-spacing: 0.2em;
 }
+/*Estilo para el boton del contenedor3 cuando pasas por encima*/
 .container3-text button:hover {
 	cursor: pointer;
 	background-color: black;
 	color: darkorange;
 	transition: 0.2s;
 }
+/*Estilo para el container4*/
 .section-container4 {
 	background-color: darkorange;
 	position: relative;
@@ -310,6 +352,7 @@ footer {
 	width: 100%;
 	height: 700px;
 }
+/*Estilo para los contenedores dentro del container4*/
 .container4-item1,
 .container4-item2,
 .container4-item3,
@@ -328,39 +371,48 @@ footer {
 	box-sizing: border-box;
 	box-shadow: 0 0 10px 1px gray;
 }
+/*Estilo para el texto del contenedor4-item4*/
 .container4-item4 {
 	font-size: 25px;
 }
+/*Estilo para el titulo del contenedor4*/
 .container4-title {
 	position: absolute;
 	width: 800px;
 	top: 10px;
 	font-size: 45px;
 }
+/*Posicionamiento*/
 .container4-item1 {
 	top: 30%;
 	left: 27.4%;
 }
+/*Posicionamiento*/
 .container4-item2 {
 	top: 30%;
 	right: 27.4%;
 }
+/*Posicionamiento*/
 .container4-item3 {
 	top: 46%;
 	left: 27.4%;
 }
+/*Posicionamiento*/
 .container4-item4 {
 	top: 46%;
 	right: 27.4%;
 }
+/*Posicionamiento*/
 .container4-item5 {
 	top: 62%;
 	left: 27.4%;
 }
+/*Posicionamiento*/
 .container4-item6 {
 	top: 62%;
 	right: 27.4%;
 }
+/*Estilos para el boton del contenedor 4*/
 .section-container4 button {
 	position: absolute;
 	background-color: transparent;
@@ -376,12 +428,14 @@ footer {
 	letter-spacing: 0.2em;
 	bottom: 50px;
 }
+/*Estilos para el boton del contenedor 4 cuando pasas por encima*/
 .section-container4 button:hover {
 	cursor: pointer;
 	background-color: white;
 	color: black;
 	transition: 0.2s;
 }
+/*Estilos para los contenedores dentro del container 5*/
 .container5-item1,
 .container5-item2,
 .container5-item3,
@@ -389,13 +443,14 @@ footer {
 	position: absolute;
 	box-shadow: 0 0 10px 1px gray;
 }
-
+/*Estilos del contenedor5*/
 .section-container5 {
 	display: flex;
 	width: 100%;
 	height: 1320px;
 	position: relative;
 }
+/*Estilos para el item1 del contenedor 5*/
 .container5-item1 {
 	width: 580px;
 	height: 580px;
@@ -404,6 +459,7 @@ footer {
 	left: 300px;
 	top: 65px;
 }
+/*Estilos para el item2 del contenedor 5*/
 .container5-item2 {
 	width: 500px;
 	height: 580px;
@@ -416,6 +472,7 @@ footer {
 	box-sizing: border-box;
 	z-index: 3;
 }
+/*Estilos para el item3 del contenedor 5*/
 .container5-item3 {
 	background-image: url("img/COD6.jpg");
 	background-size: cover;
@@ -426,6 +483,7 @@ footer {
 	top: 290px;
 	left: 750px;
 }
+/*Estilos para el item4 del contenedor 5*/
 .container5-item4 {
 	background-image: url("img/COD7.jpg");
 	background-size: cover;
@@ -437,24 +495,29 @@ footer {
 	left: 550px;
 	z-index: 0;
 }
+/*Estilo del texto para el contenedor5*/
 .container5-text {
 	text-align: left;
 }
-
+/*Estilo para los H1 del contenedor5*/
 .container5-text h1 {
 	font-size: 65px;
 	margin: 0;
 }
+/*Estilo para los p del contenedor5*/
 .container5-text p {
 	font-size: 20px;
 	line-height: 1.8em;
 }
+/*Estilo para los a del contenedor5*/
 .container5-text a {
 	color: black;
 }
+/*Estilo para los a del contenedor5 cuando pasas por encima*/
 .container5-text a:hover {
 	opacity: 0.9;
 }
+/*Estilo para el boton del contenedor5*/
 .container5-text button {
 	background-color: transparent;
 	border-style: solid;
@@ -465,13 +528,14 @@ footer {
 	padding: 20px 65px;
 	letter-spacing: 0.2em;
 }
+/*Estilo para el boton del contenedor5 cuando pasas por encima*/
 .container5-text button:hover {
 	cursor: pointer;
 	background-color: darkorange;
 	color: white;
 	transition: 0.2s;
 }
-
+/*Estilo de la seccion 6*/
 .section6-container {
 	display: flex;
 	position: relative;
@@ -480,6 +544,7 @@ footer {
 	background-color: darkorange;
 	padding: auto;
 }
+/*Estilo de la primera caja de la seccion 6*/
 .section6-border {
 	position: absolute;
 	top: 150px;
@@ -492,12 +557,14 @@ footer {
 	height: 420px;
 	z-index: 2;
 }
+/*Estilo de titulo para la caja border*/
 .container6-title {
 	position: absolute;
 	top: 0px;
 	left: 70px;
 	font-size: 45px;
 }
+/*Estilo texto 1 para la caja border*/
 .container6-text1 {
 	top: 124px;
 	font-size: 22px;
@@ -505,12 +572,14 @@ footer {
 	left: 70px;
 	margin-right: 15px;
 }
+/*Estilo texto 2 para la caja border*/
 .container6-text2 {
 	top: 204px;
 	font-size: 22px;
 	position: absolute;
 	left: 70px;
 }
+/*Estilo imagen para la seccion 6*/
 .section6-image {
 	background-image: url("img/COD8.jpg");
 	background-size: cover;
@@ -527,32 +596,37 @@ footer {
 .section6-image,
 .section6-border,
 .section6-boxes {
-	box-shadow: 0 0 10px 1px gray;
+	box-shadow: 0 0 10px 1px gray; /*Una sombra alrededor para los contenedores de la seccion 6*/
 }
+/*Estilo para la caja 1 de la seccion 6*/
 .section6-item1 {
 	position: absolute;
 	top: 780px;
 	left: 90px;
 	z-index: 2;
 }
+/*Estilo para la caja 2 de la seccion 6*/
 .section6-item2 {
 	position: absolute;
 	top: 780px;
 	left: 353px;
 	z-index: 2;
 }
+/*Estilo para la caja 3 de la seccion 6*/
 .section6-item3 {
 	position: absolute;
 	top: 780px;
 	left: 616px;
 	z-index: 2;
 }
+/*Estilo para la caja 4 de la seccion 6*/
 .section6-item4 {
 	position: absolute;
 	top: 780px;
 	left: 879px;
 	z-index: 2;
 }
+/*Estilo para el titulo de la caja 1 de la seccion 6*/
 .container6box-title {
 	font-size: 25px;
 	margin: 0;
@@ -560,6 +634,7 @@ footer {
 	top: 90px;
 	left: 45px;
 }
+/*Estilo para el titulo de la caja 2 de la seccion 6*/
 .container6box-title2 {
 	width: 200px;
 	font-size: 25px;
@@ -568,6 +643,7 @@ footer {
 	top: 90px;
 	left: 45px;
 }
+/*Estilo para el titulo de la caja 3 de la seccion 6*/
 .container6box-title3 {
 	font-size: 20px;
 	margin: 15px;
@@ -575,6 +651,7 @@ footer {
 	top: 90px;
 	left: 45px;
 }
+/*Estilo para el titulo de la caja 4 de la seccion 6*/
 .container6box-title4 {
 	font-size: 20px;
 	margin: 15px;
@@ -582,16 +659,19 @@ footer {
 	top: 90px;
 	left: 45px;
 }
+/*Estilo para el subtitulo de la caja 1 de la seccion 6*/
 .container6box-subtitle {
 	position: absolute;
 	top: 145px;
 	left: 90px;
 }
+/*Estilo para el subtitulo de la caja 2 de la seccion 6*/
 .container6box-subtitle2 {
 	position: absolute;
 	top: 145px;
 	left: 75px;
 }
+/*Estilo para el subtitulo de la caja 3 de la seccion 6*/
 .container6box-subtitle3 {
 	text-align: center;
 	margin-right: 65px;
@@ -599,12 +679,13 @@ footer {
 	top: 145px;
 	left: 65px;
 }
+/*Estilo para el subtitulo de la caja 4 de la seccion 6*/
 .container6box-subtitle4 {
 	position: absolute;
 	top: 145px;
 	left: 95px;
 }
-
+/*Estilo para las cajas de la seccion 6*/
 .section6-boxes {
 	border: 2px solid #ffffff;
 	border-radius: 15px;
@@ -616,6 +697,7 @@ footer {
 	z-index: 2;
 	margin: 15px;
 }
+/*Estilo para el boton de la seccion 6*/
 .section6-container button {
 	position: absolute;
 	bottom: 75px;
@@ -632,18 +714,22 @@ footer {
 	padding-right: 70px;
 	letter-spacing: 0.2em;
 }
+/*Estilo para el boton de la seccion 6 cuando pasas por encima*/
 .section6-container button:hover {
 	cursor: pointer;
 	background-color: darkorange;
 	color: white;
 	transition: 0.2s;
 }
+/*Estilo para el a de la seccion 6*/
 .section6-border a {
 	color: black;
 }
+/*Estilo para el a de la seccion 6 cuando pasas por encima*/
 .section6-border a:hover {
 	opacity: 0.8;
 }
+/*Estilo para la seccion 7*/
 .section7-container {
 	display: flex;
 	position: relative;
@@ -652,30 +738,35 @@ footer {
 	background-color: white;
 	padding: auto;
 }
+/*Estilo para la caja 1 de la seccion 7*/
 .section7-item1 {
 	position: absolute;
 	top: -150px;
 	left: 90px;
 	z-index: 2;
 }
+/*Estilo para la caja 2 de la seccion 7*/
 .section7-item2 {
 	position: absolute;
 	top: -150px;
 	left: 353px;
 	z-index: 2;
 }
+/*Estilo para la caja 3 de la seccion 7*/
 .section7-item3 {
 	position: absolute;
 	top: -150px;
 	left: 616px;
 	z-index: 2;
 }
+/*Estilo para la caja 4 de la seccion 7*/
 .section7-item4 {
 	position: absolute;
 	top: -150px;
 	left: 879px;
 	z-index: 2;
 }
+/*Estilo para las cajas de la seccion 7*/
 .section7-boxes {
 	border: 2px solid #ffffff;
 	border-radius: 15px;
@@ -687,6 +778,7 @@ footer {
 	margin: 15px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+/*Estilo para el titulo de la caja 1 de la seccion 7*/
 .container7box-title {
 	font-size: 20px;
 	margin: 15px;
@@ -694,6 +786,7 @@ footer {
 	top: 90px;
 	left: 30px;
 }
+/*Estilo para el titulo de la caja 2 de la seccion 7*/
 .container7box-title2 {
 	font-size: 20px;
 	margin: 15px;
@@ -701,6 +794,7 @@ footer {
 	top: 90px;
 	left: 45px;
 }
+/*Estilo para el titulo de la caja 3 de la seccion 7*/
 .container7box-title3 {
 	font-size: 20px;
 	margin: 15px;
@@ -708,6 +802,7 @@ footer {
 	top: 90px;
 	left: 45px;
 }
+/*Estilo para el titulo de la caja 4 de la seccion 7*/
 .container7box-title4 {
 	font-size: 20px;
 	margin: 15px;
@@ -715,69 +810,83 @@ footer {
 	top: 90px;
 	left: 45px;
 }
+/*Estilo para el subtitulo de la caja 1 de la seccion 7*/
 .container7box-subtitle {
 	position: absolute;
 	top: 145px;
 	left: 90px;
 }
+/*Estilo para el subtitulo de la caja 2 de la seccion 7*/
 .container7box-subtitle2 {
 	position: absolute;
 	top: 145px;
 	left: 90px;
 }
+/*Estilo para el subtitulo de la caja 3 de la seccion 7*/
 .container7box-subtitle3 {
 	position: absolute;
 	top: 145px;
 	left: 90px;
 }
+/*Estilo para el subtitulo de la caja 4 de la seccion 7*/
 .container7box-subtitle4 {
 	position: absolute;
 	top: 145px;
 	left: 90px;
 }
+/*Estilo para el campo del formulario de la seccion 7*/
 .section7-container fieldset {
 	border: none;
 }
+/*Estilo para la leyenda del formulario de la seccion 7*/
 .section7-container legend {
 	padding: 0;
 	margin-left: 10px;
 	font-size: 30px;
 	font-style: bold;
 }
+/*Estilo para el campo de correo de la seccion 7*/
 .mail-container {
 	position: absolute;
 	top: 200px;
 	left: 120px;
 }
+/*Estilo para el campo de nombre de la seccion 7*/
 .name-container {
 	position: absolute;
 	top: 200px;
 	left: 390px;
 }
+/*Estilo para el campo de mensaje de la seccion 7*/
 .msg-container {
 	position: absolute;
 	top: 320px;
 	left: 120px;
 }
+/*Estilo para la caja de texto de la seccion 7*/
 .text-container7 {
 	position: absolute;
 	top: 153px;
 	left: 700px;
 }
+/*Estilo para el H1 de la caja texto de la seccion 7*/
 .text-container7 h1 {
 	font-size: 45px;
 	color: darkorange;
 	margin-bottom: 25px;
 }
+/*Estilo para el H2 de la caja texto de la seccion 7*/
 .text-container7 h2 {
 	margin: 0;
 	font-size: 28px;
 }
+/*Estilo para el p de la caja texto de la seccion 7*/
 .text-container7 p {
 	margin-right: 150px;
 	font-size: 20px;
 	margin-bottom: 50px;
 }
+/*Estilo para las imagenes de la caja texto de la seccion 7*/
 .img-container7-1 {
 	filter: invert(72%) sepia(94%) saturate(3654%) hue-rotate(358deg)
 		brightness(99%) contrast(108%);
@@ -787,6 +896,7 @@ footer {
 	margin: 0;
 	padding: 0;
 }
+/*Estilo para las imagenes de la caja texto de la seccion 7*/
 .img-container7-2 {
 	filter: invert(72%) sepia(94%) saturate(3654%) hue-rotate(358deg)
 		brightness(99%) contrast(108%);
@@ -796,6 +906,7 @@ footer {
 	margin: 0;
 	padding: 0;
 }
+/*Estilo para las imagenes de la caja texto de la seccion 7*/
 .img-container7-3 {
 	filter: invert(72%) sepia(94%) saturate(3654%) hue-rotate(358deg)
 		brightness(99%) contrast(108%);
@@ -805,6 +916,7 @@ footer {
 	margin: 0;
 	padding: 0;
 }
+/*Estilo para las imagenes de la caja texto de la seccion 7*/
 .img-container7-4 {
 	filter: invert(72%) sepia(94%) saturate(3654%) hue-rotate(358deg)
 		brightness(99%) contrast(108%);
@@ -814,6 +926,7 @@ footer {
 	margin: 0;
 	padding: 0;
 }
+/*Estilo para el boton del formulario de la seccion 7*/
 .section7-container button {
 	position: absolute;
 	top: 510px;
@@ -831,12 +944,14 @@ footer {
 	padding: 5px 15px;
 	letter-spacing: 0.2em;
 }
+/*Estilo para el boton del formulario de la seccion 7 cuando pasas por encima*/
 .section7-container button:hover {
 	cursor: pointer;
 	background-color: transparent;
 	color: darkorange;
 	transition: 0.2s;
 }
+/*Estilos para los label del formulario*/
 #nombre,
 #correo,
 #msg {
@@ -848,23 +963,23 @@ footer {
 	width: 100%;
 	border-bottom: 2px solid darkorange;
 }
-#nombre::placeholder {
-	color: #00000085;
-	padding-left: 5px;
-	width: 100%;
-}
+/*Más estilos*/
+#nombre::placeholder,
 #correo::placeholder {
 	color: #00000085;
 	padding-left: 5px;
 	width: 100%;
 }
+/*Estilo del mensaje*/
 #msg {
 	width: 105%;
 }
+/*Estilo del mensaje*/
 #msg::placeholder {
 	color: #00000085;
 	width: 100%;
 }
+/*Estilo para el texto del footer*/
 .footfont {
 	display: flex;
 	justify-content: center;
@@ -874,6 +989,9 @@ footer {
 	margin-top: 55px;
 }
 @media (max-width: 619px) {
+	/*No se si esto tambien se tenga que comentar
+	porque es lo mismo de arriba solo que cambiando de posicion
+	y algunas alturas o ancho*/
 	.logo {
 		width: 15%;
 	}
