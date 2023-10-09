@@ -674,21 +674,21 @@ footer {
 	margin: 0;
 	position: absolute;
 	top: 90px;
-	left: 70px;
+	left: 80px;
 }
 .container7box-title3 {
 	font-size: 45px;
 	margin: 0;
 	position: absolute;
 	top: 90px;
-	left: 70px;
+	left: 80px;
 }
 .container7box-title4 {
 	font-size: 45px;
 	margin: 0;
 	position: absolute;
 	top: 90px;
-	left: 70px;
+	left: 95px;
 }
 .container7box-subtitle {
 	position: absolute;
@@ -698,17 +698,19 @@ footer {
 .container7box-subtitle2 {
 	position: absolute;
 	top: 145px;
-	left: 90px;
+	left: 75px;
 }
 .container7box-subtitle3 {
+	text-align: center;
+	margin-right: 65px;
 	position: absolute;
 	top: 145px;
-	left: 90px;
+	left: 65px;
 }
 .container7box-subtitle4 {
 	position: absolute;
 	top: 145px;
-	left: 90px;
+	left: 95px;
 }
 .section7-container fieldset {
 	border: none;
@@ -719,66 +721,70 @@ footer {
 	font-size: 30px;
 	font-style: bold;
 }
-.mail-container{
+.mail-container {
 	position: absolute;
 	top: 200px;
 	left: 120px;
 }
-.name-container{
+.name-container {
 	position: absolute;
 	top: 200px;
 	left: 390px;
 }
-.msg-container{
+.msg-container {
 	position: absolute;
 	top: 320px;
 	left: 120px;
 }
-.text-container7{
+.text-container7 {
 	position: absolute;
 	top: 153px;
 	left: 700px;
 }
-.text-container7 h1{
+.text-container7 h1 {
 	font-size: 45px;
 	color: rgb(0, 102, 255);
 	margin-bottom: 25px;
 }
-.text-container7 h2{
+.text-container7 h2 {
 	margin: 0;
 	font-size: 28px;
 }
-.text-container7 p{
+.text-container7 p {
 	margin-right: 150px;
 	font-size: 20px;
 	margin-bottom: 50px;
 }
-.img-container7-1{
-	filter: invert(23%) sepia(100%) saturate(2147%) hue-rotate(210deg) brightness(105%) contrast(111%);
+.img-container7-1 {
+	filter: invert(23%) sepia(100%) saturate(2147%) hue-rotate(210deg)
+		brightness(105%) contrast(111%);
 	position: absolute;
 	top: 272px;
 	left: 0px;
 	margin: 0;
 	padding: 0;
 }
-.img-container7-2{
-	filter: invert(23%) sepia(100%) saturate(2147%) hue-rotate(210deg) brightness(105%) contrast(111%);
+.img-container7-2 {
+	filter: invert(23%) sepia(100%) saturate(2147%) hue-rotate(210deg)
+		brightness(105%) contrast(111%);
 	position: absolute;
 	top: 274px;
 	left: 50px;
 	margin: 0;
 	padding: 0;
 }
-.img-container7-3{
-	filter: invert(23%) sepia(100%) saturate(2147%) hue-rotate(210deg) brightness(105%) contrast(111%);
+.img-container7-3 {
+	filter: invert(23%) sepia(100%) saturate(2147%) hue-rotate(210deg)
+		brightness(105%) contrast(111%);
 	position: absolute;
 	top: 280px;
 	left: 110px;
 	margin: 0;
 	padding: 0;
 }
-.img-container7-4{
-	filter: invert(23%) sepia(100%) saturate(2147%) hue-rotate(210deg) brightness(105%) contrast(111%);
+.img-container7-4 {
+	filter: invert(23%) sepia(100%) saturate(2147%) hue-rotate(210deg)
+		brightness(105%) contrast(111%);
 	position: absolute;
 	top: 280px;
 	left: 165px;
@@ -815,14 +821,12 @@ footer {
 	padding: 10px 12px;
 	font-size: 20px;
 	width: 100%;
-	border-bottom:2px solid rgb(0, 102, 255);
+	border-bottom: 2px solid rgb(0, 102, 255);
 }
 #nombre::placeholder {
 	color: #00000085;
 	padding-left: 5px;
 	width: 100%;
-	
-	
 }
 #correo {
 	border: none;
@@ -831,29 +835,25 @@ footer {
 	padding: 10px 12px;
 	font-size: 20px;
 	width: 100%;
-	border-bottom:2px solid rgb(0, 102, 255);
+	border-bottom: 2px solid rgb(0, 102, 255);
 }
 #correo::placeholder {
 	color: #00000085;
 	padding-left: 5px;
 	width: 100%;
-	
-	
 }
-#msg{
+#msg {
 	border: none;
 	outline: none;
 	margin: 0;
 	padding: 10px 12px;
 	font-size: 20px;
 	width: 105%;
-	border-bottom:2px solid rgb(0, 102, 255);
+	border-bottom: 2px solid rgb(0, 102, 255);
 }
 #msg::placeholder {
 	color: #00000085;
 	width: 100%;
-	
-	
 }
 .footfont {
 	display: flex;
